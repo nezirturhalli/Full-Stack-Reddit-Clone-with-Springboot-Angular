@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  db_library:
+    container_name: mysql
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_USER: user
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db_redditClone
+    ports:
+      - "3306:3306"
